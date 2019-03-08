@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <conio.h>
+#include <iomanip>
+
+using namespace std;
+
+int main ()
+{
+	double Mass;
+	double Density;
+
+	cout<< "Volume"<< "=" << "Mass" << "=" << "Density" << "=" << endl;
+	cout<< "Mass in Grams" << endl;
+	cin>> Mass;
+
+	cout<< "Density in grams/cubic meters" << endl;
+	cin>> Density;
+
+	cout<< "Volume"<< "=" << endl;
+
+	cout<< setprecision(3) << Mass/Density << endl;
+
+	cout<< endl;
+
+_getch();
+return 0;
+}
